@@ -2,7 +2,7 @@
 
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
 
-Aplicación web básica sobre una calculadora de propinas el cual usa lo nuevo de angular como:
+Aplicación web básica sobre una calculadora de propinas el cual usa lo nuevo de angular y otras tecnologías como:
 
 - **Signals**
 - **Inyección de Dependencias**
@@ -19,3 +19,4 @@ Para ejecutar la aplicación sigue los siguientes pasos:
 
 ## Notas
 - Se debe tener instalado **Node.js** para ejecutar los comandos `npm`
+- Ejecuta los comandos dentro de la carpeta del proyecto
