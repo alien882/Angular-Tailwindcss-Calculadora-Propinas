@@ -1,0 +1,10 @@
+<button
+    class="border-2 border-teal-400 w-full p-3 flex justify-between hover:bg-teal-200 transition-colors duration-300"
+    type="button"
+    (click)="onAddItem()"
+>
+    <p>{{menuItem().name}}</p>
+    <p class="font-black">
+        {{menuItem().price | currency}}
+    </p>
+</button>

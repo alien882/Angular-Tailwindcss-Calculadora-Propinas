@@ -1,0 +1,28 @@
+<div class="space-y-3">
+    <h2 class="font-black text-2xl">Totales y Propina:</h2>
+    <p>
+        Subtotal a pagar:
+        <span class="font-bold">
+            {{subTotal() | currency}}
+        </span>
+    </p>
+
+    <p>
+        Propina: 
+        <span class="font-bold">
+            {{tipAmount() | currency}}
+        </span>
+    </p>
+    <p>
+        Total a Pagar: 
+        <span class="font-bold">
+            {{total() | currency}}
+        </span>
+    </p>
+</div>
+<button
+    class="w-full bg-black p-3 uppercase text-white font-bold mt-10"
+    (click)="onPlaceOrder()"
+>
+    Guardar Orden
+</button>

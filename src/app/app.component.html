@@ -1,0 +1,26 @@
+<header class="bg-teal-400 py-5">
+  <h1 class="text-center text-3xl font-black">Calculadora de Propinas y Consumo</h1>
+</header>
+<main class="w-11/12 md:max-w-7xl mx-auto py-20 grid md:grid-cols-2">
+  <div class="p-5">
+    <h2 class="text-2xl font-black">Menú</h2>
+    <div class="mt-10 flex flex-col gap-3">
+      @for (item of listFood; track item.id) {
+        <app-menu-item
+          [menuItem]="item"
+        />
+      }
+    </div>
+  </div>
+  <div class="border border-dashed border-slate-300 p-5 rounded-lg
+    flex flex-col gap-10
+  ">
+    @if (orderHasSomething()) {
+      <app-order-content />
+      <app-tip-percentage-form />
+      <app-order-totals />
+    } @else {
+      <p class="text-center">La orden esta vacía</p>
+    }
+  </div>
+</main>
